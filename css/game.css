@@ -1,0 +1,179 @@
+body {
+    background-color: #000;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+#main {
+    background-color: #000;
+    height: 950px;
+    width: 1400px;
+}
+
+
+#mic {
+    display: block;
+    float: left;
+    height: 800px;
+    position: fixed;
+    width: 1400px;
+}
+
+
+/*-------------------------------------
+    Main Content Area Sytles 
+-------------------------------------*/
+#content {
+    border-radius: 10px;
+    display: block;
+    float: left;
+    margin-left: 300px;
+    margin-top: 175px;
+    position: relative;
+    width: 50%;
+}
+
+
+#content p {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    position: relative;
+}
+
+
+
+/*-------------------------------------
+    Lyrics and User Feedback 
+-------------------------------------*/
+h2 {
+    display: inline;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    position: relative;
+}
+
+
+.lyrics {
+}
+
+
+
+/*-------------------------------------
+    User Feedback 
+-------------------------------------*/
+.correct {
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    display: block;
+    position: relative;
+}
+
+
+.profile {
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+
+/*----------------------------------------
+    Sidebar w/ Answer Options and Results 
+----------------------------------------*/
+#sidebar {
+    background: rgba(78, 78, 78, 0.4);
+    display: block;
+    float: right;
+    height: 950px;
+    position: relative;
+    width: 300px;
+}
+
+
+#sidebar p {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+#answer1 {
+    background-image: url(../images/doom.gif);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: inline;
+    float: left;
+    height: 113px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+
+#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #answer5:hover {
+    background-position: -200px 0;
+}
+
+
+#answer2, #answer3, #answer4, #answer5 {
+    border-radius: 10px;
+    clear: left;
+    display: inline;
+    float: left;
+    height: 113px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+
+#answer2 {
+    background-image: url(../images/edan.gif);
+    background-repeat: no-repeat;
+}
+
+
+#answer3 {
+    background-image: url(../images/jayelect.gif);
+    background-repeat: no-repeat;
+}
+
+
+#answer4 {
+    background-image: url(../images/lupe.gif);
+    background-repeat: no-repeat;
+}
+
+
+#answer5 {
+    background-image: url(../images/thought.gif);
+    background-repeat: no-repeat;
+}
+
+
+
+#results {
+    clear: left;
+    display: block;
+    float: left;
+    margin-top: 50px;
+    width: 300px
+}
+
+#results > p {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+

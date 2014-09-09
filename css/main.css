@@ -1,0 +1,41 @@
+body {
+    background-color: #000;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Container */
+#main {
+    background-color: #000;
+    height: 800px;
+    width: 1400px;
+}
+
+
+header {
+    display: block;
+    float: left;
+    height: 70px;
+    width: 1400px;
+}
+
+
+#title {
+    display: block;
+    float: left;
+    height: 65px;
+    width: 600px;
+}
+
+
+/* Background image with text overlay */
+#mic {
+    display: block;
+    float: left;
+    height: 800px;
+    width: 1400px;
+}
+
+
