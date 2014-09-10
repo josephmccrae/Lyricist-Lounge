@@ -1,6 +1,5 @@
 $(document).ready(function(){
     
-    
     function Verses(number, question, answer, pic, artist, song, album){
         this.number = number;
         this.question = question;
@@ -11,6 +10,10 @@ $(document).ready(function(){
         this.album = album;
     }
     
+    var intro = 'I start to think, and then I sink <br> Into the paper, like I was ink <br> When I\'m writing I\'m trapped in between the line <br> I escape, when I finish the rhyme...';
+    
+    var direct = 'Welcome to the Lyricist Lounge <br> <br> How deep is your hip-hop knowledge? <br>  This is a game of "Who Wrote That Rhyme?" <br> You will be given a verse from a hip-hop track in this very display  <br> Select the emcee who penned the gem over from the right-hand side bar  <br> 5 verses total, 5 emcees, and each correct answer earns you a mic  <br> 5 mics is perfection';
+        
     var question1 = new Verses(1,"I had a ghetto boy bop, a Jay-Z boycott <br> Cause he said that he never prayed to God, he prayed to Gotti <br> I\'m thinking \"golly, God, guard me from the ungodly\" <br> But by my 30th watching of \"Streets is Watching\" <br> I was back to giving props again and that was bothering",4,'<img src="images/lupe.jpg" class="profile" /> <br>',"Lupe Fiasco","Hurt Me Soul","Food & Liquor");
     
     var question2 = new Verses(2,"Some come in the form of codependence <br> A lot of times only end up being codefendants <br> Ten bucks say they tell for a lower sentence <br> And leave you up under the jail, begging for a penance <br> It don't make no sense, what happened to the loyalty? <br> Honor amongst crooks, trust amongst royalty <br> I'd rather go out in a blaze, than give 'em the glory <br> (How many of us have...) a similar story",1, '<img src="images/doom1.gif" class="profile" /> <br>',"MF Doom","Deep Fried Frenz","Mmm..Food?");
@@ -22,9 +25,26 @@ $(document).ready(function(){
     var question5 = new Verses(5,"Pour the hourglass sand in the rusted tin can <br> The looking glass man dressed in robes from Japan <br> The chauffeur of the van with the globe in his hand <br> The roller coaster lands in the ocean <br> Alas, the commotion is matched by the force of the splash <br> The source of the blast was a porcelain gat <br> The orphan in rags <br> A fraudulent match for the torturous wrath of the horseman in black <br> The sorcerer laughs <br> Foes in the bath with a cauldron of rats, gone in a flash <br> The forces of life <br> Absorbed in a fight with the wrong and the right <br> The author was typing, the water was icy, the slaughter was pricey <br> The martyr was light-skinned with chartered indictments <br> that started in high school <br> His father was Michael, He shot him with a rifle <br> A product of the cycle",2,"Edan","Murder Mystery","Beauty and the Beat");
 
     
-    $('.lyrics').append(question1.question);
+    function startup(){
+        $('#mic').hide();
+        $('#sidebar').hide();
+        $('.lyrics').append(intro).hide().fadeIn(5000);
+        $('.continue').hide().delay(4000).fadeIn(4000);
+    }
     
+    startup();
     
+    function instructions(){
+        $('.continue').click(function(){
+            $('.continue').hide();
+            $('#mic').hide().fadeIn(2000);
+            $('.lyrics').text('');
+            $('.lyrics').append(direct).hide().fadeIn(5000);
+            $('#sidebar').hide().delay(7000).fadeIn(7000);
+        });
+    }
+
+    instructions();
     
 });
 

@@ -8,7 +8,7 @@ body {
 
 #main {
     background-color: #000;
-    height: 950px;
+    height: 800px;
     width: 1400px;
 }
 
@@ -25,64 +25,45 @@ body {
 /*-------------------------------------
     Main Content Area Sytles 
 -------------------------------------*/
-#content {
-    border-radius: 10px;
+
+#display {
     display: block;
     float: left;
-    margin-left: 300px;
-    margin-top: 175px;
+    height: 800px;
     position: relative;
-    width: 50%;
-}
-
-
-#content p {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 200;
-    font-size: 1.5em;
-    position: relative;
-}
-
-
-
-/*-------------------------------------
-    Lyrics and User Feedback 
--------------------------------------*/
-h2 {
-    display: inline;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 200;
-    line-height: 1.5;
-    position: relative;
+    width: 1100px;
 }
 
 
 .lyrics {
-}
-
-
-
-/*-------------------------------------
-    User Feedback 
--------------------------------------*/
-.correct {
     background: rgba(0,0,0,0.4);
     border-radius: 10px;
-    display: block;
-    position: relative;
-}
-
-
-.profile {
     border-radius: 10px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    float: left;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-top: 200px;
+    padding: 25px;
     position: relative;
+    width: 75%;
 }
 
 
+.continue {
+    clear: left;
+    display: inline;
+    float: left;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.25em;
+    height: 35px;
+    margin-left: 125px;
+    margin-top: 50px;
+    position: relative;
+    width: 100px;
+}
 
 /*----------------------------------------
     Sidebar w/ Answer Options and Results 
@@ -91,7 +72,7 @@ h2 {
     background: rgba(78, 78, 78, 0.4);
     display: block;
     float: right;
-    height: 950px;
+    height: 800px;
     position: relative;
     width: 300px;
 }
@@ -105,15 +86,12 @@ h2 {
 }
 
 
-#answer1 {
-    background-image: url(../images/doom.gif);
-    background-repeat: no-repeat;
+#answer1, #answer2, #answer3, #answer4, #answer5 {
     border-radius: 10px;
     display: inline;
     float: left;
     height: 113px;
     margin-left: 50px;
-    margin-bottom: 20px;
     width: 200px;
 }
 
@@ -123,39 +101,42 @@ h2 {
 }
 
 
-#answer2, #answer3, #answer4, #answer5 {
-    border-radius: 10px;
-    clear: left;
-    display: inline;
-    float: left;
-    height: 113px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    width: 200px;
+#answer1 {
+    background-image: url(../images/doom.gif);
+    background-repeat: no-repeat;
+    margin-top: 40px;
 }
 
 
 #answer2 {
     background-image: url(../images/edan.gif);
     background-repeat: no-repeat;
+    clear: left;
+    margin-top: 40px;
 }
 
 
 #answer3 {
     background-image: url(../images/jayelect.gif);
     background-repeat: no-repeat;
+    clear: left;
+    margin-top: 40px;
 }
 
 
 #answer4 {
     background-image: url(../images/lupe.gif);
     background-repeat: no-repeat;
+    clear: left;
+    margin-top: 40px;
 }
 
 
 #answer5 {
     background-image: url(../images/thought.gif);
     background-repeat: no-repeat;
+    clear: left;
+    margin-top: 40px;
 }
 
 
