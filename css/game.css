@@ -35,7 +35,7 @@ body {
 }
 
 
-.lyrics {
+#lyrics {
     background: rgba(0,0,0,0.4);
     border-radius: 10px;
     border-radius: 10px;
@@ -52,8 +52,9 @@ body {
 }
 
 
-.continue {
+#continue {
     background-color: #000;
+    border: 1px solid #000;
     clear: left;
     color: white;
     display: inline;
@@ -65,6 +66,26 @@ body {
     margin-top: 50px;
     position: relative;
     width: 100px;
+}
+
+
+#profile {
+    display: none;
+}
+
+
+#feedback {
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+
+
+li {
+    color: #911313;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    list-style: none;
 }
 
 /*----------------------------------------
@@ -96,8 +117,8 @@ body {
     margin-left: 50px;
     width: 200px;
 }
-
-
+    
+    
 #answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #answer5:hover {
     background-position: -200px 0;
 }
