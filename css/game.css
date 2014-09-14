@@ -69,23 +69,10 @@ body {
 }
 
 
-#profile {
-    display: none;
-}
-
-
 #feedback {
-    margin-top: 25px;
+    margin-top: -10px;
 }
 
-
-li {
-    color: #911313;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 200;
-    font-size: 1em;
-    list-style: none;
-}
 
 /*----------------------------------------
     Sidebar w/ Answer Options and Results 
@@ -124,14 +111,14 @@ li {
 
 
 #answer1 {
-    background-image: url(../images/doom.gif);
+    background-image: url(../images/sprites/jayz.gif);
     background-repeat: no-repeat;
     margin-top: 40px;
 }
 
 
 #answer2 {
-    background-image: url(../images/edan.gif);
+    background-image: url(../images/sprites/mmathers.gif);
     background-repeat: no-repeat;
     clear: left;
     margin-top: 40px;
@@ -139,7 +126,7 @@ li {
 
 
 #answer3 {
-    background-image: url(../images/jayelect.gif);
+    background-image: url(../images/sprites/nasir.gif);
     background-repeat: no-repeat;
     clear: left;
     margin-top: 40px;
@@ -147,7 +134,7 @@ li {
 
 
 #answer4 {
-    background-image: url(../images/lupe.gif);
+    background-image: url(../images/sprites/kwest.gif);
     background-repeat: no-repeat;
     clear: left;
     margin-top: 40px;
@@ -155,7 +142,7 @@ li {
 
 
 #answer5 {
-    background-image: url(../images/thought.gif);
+    background-image: url(../images/sprites/andre3000.gif);
     background-repeat: no-repeat;
     clear: left;
     margin-top: 40px;
