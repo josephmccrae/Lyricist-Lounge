@@ -51,19 +51,19 @@ $(document).ready(function(){
         $('#mic').hide();
         $('#sidebar').hide();
         $('#lyrics').append('<p class="scribe">' + intro + '</p>').hide().fadeIn(3000);
-        $('#continue').hide().delay(7000).fadeIn(4000);
+        $('#continue').hide().delay(7000).fadeIn(3000);
     }
     
     
     //Game instructions
     function instructions(){
         $('#continue').on('click', function(){
-            $(this).hide().delay(8000).fadeIn(4000).off().click(Questions);
+            $(this).hide().delay(10000).fadeIn(3000).off().click(Questions);
                 $('#mic').hide().fadeIn(3000);
                 $('#lyrics').text('');
                 $('#lyrics').append('<h3 id="title">Welcome to the Lyricist Lounge</h3>').hide().fadeIn(3000);
                 $('#lyrics').append('<p class="default">' + direct + '</p>').hide().fadeIn(3000);
-                $('#sidebar').hide().delay(7000).fadeIn(4000);
+                $('#sidebar').hide().delay(7000).fadeIn(3000);
         });
     }
 
