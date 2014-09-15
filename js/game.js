@@ -140,22 +140,22 @@ $(document).ready(function(){
         $('#sidebar').hide();
         if(count==5){
             $('#display').append('<p class="final">L&nbsp;E G E N D</p>');
-            $('#display').append('<img src="../images/misc/5-mics.gif" class="trophy" />');
+            $('#display').append('<img src="images/misc/5-mics.gif" class="trophy" />');
         }else if(count==4){
             $('#display').append('<p class="final">M A S T E R</p>');
-            $('#display').append('<img src="../images/misc/4-mics.gif" class="trophy" />');
+            $('#display').append('<img src="images/misc/4-mics.gif" class="trophy" />');
         }else if(count==3){
             $('#display').append('<p class="final">T R U E&nbsp;&nbsp;&nbsp;&nbsp;S T U D E N T</p>');
-            $('#display').append('<img src="../images/misc/3-mics.gif" class="trophy" />');
+            $('#display').append('<img src="images/misc/3-mics.gif" class="trophy" />');
         }else if(count==2){
             $('#display').append('<p class="final">P R O</p>');
-            $('#display').append('<img src="../images/misc/2-mics.gif" class="trophy" />');
+            $('#display').append('<img src="images/misc/2-mics.gif" class="trophy" />');
         }else if(count==1){
             $('#display').append('<p class="final">B E G I N N E R</p>');
-            $('#display').append('<img src="../images/misc/1-mic.gif" class="trophy" />');
+            $('#display').append('<img src="images/misc/1-mic.gif" class="trophy" />');
         }else{
             $('#display').append('<p class="final">W E A K&nbsp;&nbsp;&nbsp;&nbsp;S A U C E</p>');
-            $('#display').append('<img src="../images/misc/no-mics1.gif" class="trophy" />');
+            $('#display').append('<img src="images/misc/no-mics1.gif" class="trophy" />');
         }  
     }
         
