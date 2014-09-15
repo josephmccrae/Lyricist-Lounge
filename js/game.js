@@ -19,9 +19,9 @@ $(document).ready(function(){
     
     
     
-    var intro = 'I start to think, and then I sink <br> Into the paper, like I was ink <br> When I\'m writing I\'m trapped in between the line <br> I escape, when I finish the rhyme...';
+    var intro = 'I start to think, and then I sink <br> Into the paper, like I was ink <br> When I\'m writing I\'m trapped in between the lines <br> I escape, when I finish the rhyme...';
     
-    var direct = 'Welcome to the Lyricist Lounge <br> <br> How deep is your hip-hop knowledge? <br>  This is a game of "Who Wrote That Rhyme?" <br> You will be given a verse from a hip-hop track in this very display  <br> Select the emcee who penned the gem over from the right-hand side bar  <br> 5 verses total, 5 emcees, and each correct answer earns you a mic  <br> 5 mics is perfection';
+    var direct = 'How deep is your hip-hop knowledge? <br>  This is a game of "Who Wrote That Rhyme?" <br> You will be given a verse from a hip-hop track in this very display  <br> Select the emcee who penned the gem over from the right-hand side bar  <br> 5 verses total, 5 emcees, and each correct answer earns you a mic  <br> 5 mics is perfection';
         
     var question1 = new Verses("The soul's escaping <br> Through this hole that is gaping <br> This world is mine for the taking <br> Make me king <br> As we move toward a New World Order <br> A normal life is boring <br> But superstardom's <br> Close to post-mortem",'answer2',"Eminem","Lose Yourself","8 Mile Soundtrack");
     
@@ -45,12 +45,12 @@ $(document).ready(function(){
     var question10 = new Verses("A fraudulent match for the torturous wrath of the horseman in black <br> The sorcerer laughs <br> Foes in the bath with a cauldron of rats, gone in a flash <br> The forces of life <br> Absorbed in a fight with the wrong and the right <br> The author was typing, the water was icy, the slaughter was pricey <br> The martyr was light-skinned with chartered indictments <br> that started in high school <br> His father was Michael, he shot him with a rifle <br> A product of the cycle",'answer2',"Edan","Murder Mystery","Beauty and the Beat");
 */
 
-    
+
     //Starting point for first time game
     function brandNew(){
         $('#mic').hide();
         $('#sidebar').hide();
-        $('#lyrics').append(intro).hide().fadeIn(3000);
+        $('#lyrics').append('<p class="scribe">' + intro + '</p>').hide().fadeIn(3000);
         $('#continue').hide().delay(3000).fadeIn(3000);
     }
     
@@ -61,8 +61,9 @@ $(document).ready(function(){
             $(this).hide().delay(8000).fadeIn(3000).off().click(Questions);
                 $('#mic').hide().fadeIn(3000);
                 $('#lyrics').text('');
-                $('#lyrics').append(direct).hide().fadeIn(3000);
-                $('#sidebar').hide().delay(6000).fadeIn(3000);
+                $('#lyrics').append('<h3 id="title">Welcome to the Lyricist Lounge</h3>').hide().fadeIn(3000);
+                $('#lyrics').append('<p class="default">' + direct + '</p>').hide().fadeIn(3000);
+                $('#sidebar').hide().delay(6500).fadeIn(3000);
         });
     }
 
@@ -78,7 +79,7 @@ $(document).ready(function(){
         
         $('#continue').hide();
         $('#lyrics').text('');
-        $('#lyrics').append(currentQ.question).hide().fadeIn(1000);
+        $('#lyrics').append('<p class="scribe">' + currentQ.question + '</p>').hide().fadeIn(1000);
              
         gameOn();
         
@@ -88,20 +89,25 @@ $(document).ready(function(){
     }
     
     
+    
+    function profile(){
+        $('#lyrics').append('<p class="track">Track: ' + currentQ.track + '</p>');
+        $('#lyrics').append('<p class="album">Album: ' + currentQ.album + '</p>');
+    }
+    
+    
     function compare(){
         if(selection == correct){
             count++;
             $('#lyrics').text('');
-            $('#lyrics').append('<h3 id="feedback">YESSIR!</h3>');
-            $('#lyrics').append('<h4>'+ currentQ.emcee + '</h4>');
-            $('#lyrics').append('<h5>This gem is from "'+currentQ.track+'" off of the "'+ currentQ.album +'" album</h5>');
-            $('#lyrics').append('<h5>' + count + ' out of 5 mics</h5>');
+            $('#lyrics').append('<p class="feedback" id="right">YESSIR!</p');
+            profile();
+            $('#lyrics').append('<p class="mics">' + count + ' out of 5 mics</p>');
         }else{
             $('#lyrics').text('');
-            $('#lyrics').append('<h3 id="feedback">W R O N G ! ! !</h3>');
-            $('#lyrics').append('<h4>This gem was penned by ' + currentQ.emcee + '</h4>');
-            $('#lyrics').append('<h5>The track is "'+currentQ.track+'" from the "'+ currentQ.album +'" album</h5>');
-            $('#lyrics').append('<h5>You get NO mics, son...</h5>');
+            $('#lyrics').append('<p class="feedback" id="wrong">NERP!</p>');
+            profile();
+            $('#lyrics').append('<p class="mics">You get NO mics, son...</p>');
         }
     }
     
@@ -128,23 +134,29 @@ $(document).ready(function(){
     
    
     function overview(){
-        $('#continue').hide();
-        $('#lyrics').text('');
-        $('#lyrics').append('<h3 id="feedback">Status:</h3>');
-        $('#lyrics').append('<h5>' + count + ' out of 5 mics</h5>');
+        $('#lyrics').remove();
+        $('#continue').remove();
+        $('#mic').remove();
+        $('#sidebar').remove();
         if(count==5){
-            $('#lyrics').append('<h5>Legend</h5>');
+            $('#display').append('<p class="final">L E G E N D</p>').hide().delay(3000).fadeIn(3000);
+            $('#display').append('<img src="../images/misc/5-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
         }else if(count==4){
-            $('#lyrics').append('<h5>Master</h5>');
+            $('#display').append('<p class="final">M A S T E R</p>').hide().delay(3000).fadeIn(3000);
+            $('#display').append('<img src="../images/misc/4-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
         }else if(count==3){
-            $('#lyrics').append('<h5>Respected</h5>');
+            $('#display').append('<p class="final">T R U E   S T U D E N T</p>').hide().delay(3000).fadeIn(3000);
+            $('#display').append('<img src="../images/misc/3-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
         }else if(count==2){
-            $('#lyrics').append('<h5>Weak Sauce</h5>');
+            $('#display').append('<p class="final">P R O</p>').hide().delay(3000).fadeIn(3000);
+            $('#display').append('<img src="../images/misc/2-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
         }else if(count==1){
-            $('#lyrics').append('<h5>Whack!</h5>');
+            $('#display').append('<p class="final">B E G I N N E R</p>').hide().delay(3000).fadeIn(3000);
+            $('#display').append('<img src="../images/misc/1-mic.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
         }else{
-            $('#lyrics').append('<h5>Really?</h5>');
-        }            
+            $('#display').append('<p class="final">W H A C K</p>').hide().delay(3000).fadeIn(3000);
+            $('#display').append('<img src="../images/misc/no-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
+        }  
     }
     
 });

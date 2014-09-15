@@ -38,10 +38,9 @@ body {
 #lyrics {
     background: rgba(0,0,0,0.4);
     border-radius: 10px;
-    border-radius: 10px;
     display: block;
     float: left;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;   
     font-weight: 200;
     line-height: 1.5;
     margin-left: 100px;
@@ -55,24 +54,68 @@ body {
 #continue {
     background-color: #000;
     border: 1px solid #000;
+    border-radius: 10px;
     clear: left;
     color: white;
     display: inline;
     float: left;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.25em;
+    font-size: 1em;
     height: 35px;
     margin-left: 125px;
-    margin-top: 50px;
+    margin-top: 25px;
     position: relative;
     width: 100px;
 }
 
 
-#feedback {
+#title {
+    font-family: 'Arizonia', cursive;    
+    font-size: 2.5em;
     margin-top: -10px;
 }
 
+
+.default {
+    margin-top: -50px;
+}
+
+
+.feedback {
+    clear: both;
+    margin-top: -10px;
+    text-align: center;
+}
+
+
+.scribe {
+    font-family: 'Nothing You Could Do', cursive; 
+    font-size: 1em;
+}
+
+
+.track, .album, .mics {
+    clear: left;
+    display: block;
+    margin-top: -10px;
+    text-align: center;
+}
+
+
+#right {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2em;
+    font-weight: 200;
+    text-shadow: 2px 2px 7px #668e86;
+}
+
+
+#wrong {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2em;
+    font-weight: 200;
+    text-shadow: 2px 2px 7px #7c1313;
+}
 
 /*----------------------------------------
     Sidebar w/ Answer Options and Results 
@@ -146,6 +189,30 @@ body {
     background-repeat: no-repeat;
     clear: left;
     margin-top: 40px;
+}
+
+
+/*----------------------------------------
+    Sidebar w/ Answer Options and Results 
+----------------------------------------*/
+
+.final {
+    display: block;
+    font-family: "Permanent Marker", cursive;   
+    font-size: 5em;
+    font-weight: 200;
+    margin-left: auto;
+    margin-top: 300px;
+    text-align: left;
+    width: 800px;
+}
+    
+
+.trophy {
+    display: block;
+    height: 200px;
+    margin-left: auto;
+    width: 800px;
 }
 
 
