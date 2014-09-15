@@ -58,12 +58,12 @@ $(document).ready(function(){
     //Game instructions
     function instructions(){
         $('#continue').on('click', function(){
-            $(this).hide().delay(8000).fadeIn(3000).off().click(Questions);
+            $(this).hide().delay(8000).fadeIn(4000).off().click(Questions);
                 $('#mic').hide().fadeIn(3000);
                 $('#lyrics').text('');
                 $('#lyrics').append('<h3 id="title">Welcome to the Lyricist Lounge</h3>').hide().fadeIn(3000);
                 $('#lyrics').append('<p class="default">' + direct + '</p>').hide().fadeIn(3000);
-                $('#sidebar').hide().delay(6500).fadeIn(3000);
+                $('#sidebar').hide().delay(7000).fadeIn(4000);
         });
     }
 
