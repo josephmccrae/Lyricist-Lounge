@@ -51,7 +51,7 @@ $(document).ready(function(){
         $('#mic').hide();
         $('#sidebar').hide();
         $('#lyrics').append('<p class="scribe">' + intro + '</p>').hide().fadeIn(3000);
-        $('#continue').hide().delay(3000).fadeIn(3000);
+        $('#continue').hide().delay(7000).fadeIn(4000);
     }
     
     
