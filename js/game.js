@@ -131,33 +131,34 @@ $(document).ready(function(){
     console.log(count);
     
     }
-    
+   
    
     function overview(){
-        $('#lyrics').remove();
-        $('#continue').remove();
-        $('#mic').remove();
-        $('#sidebar').remove();
+        $('#lyrics').hide();
+        $('#continue').hide();
+        $('#mic').hide();
+        $('#sidebar').hide();
         if(count==5){
-            $('#display').append('<p class="final">L E G E N D</p>').hide().delay(3000).fadeIn(3000);
-            $('#display').append('<img src="../images/misc/5-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
+            $('#display').append('<p class="final">L&nbsp;E G E N D</p>');
+            $('#display').append('<img src="../images/misc/5-mics.gif" class="trophy" />');
         }else if(count==4){
-            $('#display').append('<p class="final">M A S T E R</p>').hide().delay(3000).fadeIn(3000);
-            $('#display').append('<img src="../images/misc/4-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
+            $('#display').append('<p class="final">M A S T E R</p>');
+            $('#display').append('<img src="../images/misc/4-mics.gif" class="trophy" />');
         }else if(count==3){
-            $('#display').append('<p class="final">T R U E   S T U D E N T</p>').hide().delay(3000).fadeIn(3000);
-            $('#display').append('<img src="../images/misc/3-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
+            $('#display').append('<p class="final">T R U E&nbsp;&nbsp;&nbsp;&nbsp;S T U D E N T</p>');
+            $('#display').append('<img src="../images/misc/3-mics.gif" class="trophy" />');
         }else if(count==2){
-            $('#display').append('<p class="final">P R O</p>').hide().delay(3000).fadeIn(3000);
-            $('#display').append('<img src="../images/misc/2-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
+            $('#display').append('<p class="final">P R O</p>');
+            $('#display').append('<img src="../images/misc/2-mics.gif" class="trophy" />');
         }else if(count==1){
-            $('#display').append('<p class="final">B E G I N N E R</p>').hide().delay(3000).fadeIn(3000);
-            $('#display').append('<img src="../images/misc/1-mic.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
+            $('#display').append('<p class="final">B E G I N N E R</p>');
+            $('#display').append('<img src="../images/misc/1-mic.gif" class="trophy" />');
         }else{
-            $('#display').append('<p class="final">W H A C K</p>').hide().delay(3000).fadeIn(3000);
-            $('#display').append('<img src="../images/misc/no-mics.gif" class="trophy" />').hide().delay(5000).fadeIn(5000);
+            $('#display').append('<p class="final">W E A K&nbsp;&nbsp;&nbsp;&nbsp;S A U C E</p>');
+            $('#display').append('<img src="../images/misc/no-mics1.gif" class="trophy" />');
         }  
     }
+        
     
 });
 
