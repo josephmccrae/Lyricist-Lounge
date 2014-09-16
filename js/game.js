@@ -31,7 +31,7 @@ $(document).ready(function(){
       
     var question4 = new Verses("I dumbed down for my audience to double my dollars <br> They criticized me for it, yet they all yell \"holla\" <br> If skills sold, truth be told, I'd probably be <br> Lyrically, Talib Kweli <br> Truthfully, I wanna rhyme like Common Sense <br> (But I did 5 mill') - I ain't been rhyming like Common since",'answer1',"Jay Z","Moment of Clarity","The Black Album");
 
-    var question5 = new Verses("You'd dropped me off by the dungeon <br> Never came in, but I knew that you were wondrin' <br> Now are these \[fellas\] in this house up to something <br> Selling crack sack by sacks so they could function <br> W-w-well, yes and no <br> Yes we were selling it but no it wadn't blow <br> Cook it in the basement then move it at a show <br> Then grab the microphone and everybody yelled \"ho!\"",'answer5',"Andre 3000","A Day in the Life of Benjamin Andre","My Beautiful Dark Twisted Fantasy");
+    var question5 = new Verses("You'd dropped me off by the dungeon <br> Never came in, but I knew that you were wondrin' <br> Now are these \[fellas\] in this house up to something <br> Selling crack sack by sacks so they could function <br> W-w-well, yes and no <br> Yes we were selling it but no it wadn't blow <br> Cook it in the basement then move it at a show <br> Then grab the microphone and everybody yelled \"ho!\"",'answer5',"Andre 3000","A Day in the Life of Benjamin Andre","The Love Below");
     
     /*
     var question6 = new Verses("Tryin' to control the fits of panic <br> Unwritten and unraveled, it's the dead man's pedantic <br> Whatever, <br> See it's really just a matter of semantics <br> When everybody's fresh out of collateral to damage <br> And my splaying got me praying like a mantis <br> I begin to vanish <br> Feel the pull of the blank canvas <br> I\'m contemplating that special dedication <br> To whoever it concern, my letter of resignation <br> Fading back to black, my dark coronation <br> The heat of the day, the long robe of muerte <br> That soul is in the atmosphere like airplay <br> If there\'s a Heaven I can\'t find a stairway",'answer5',"Black Thought","Make My","Undun");
@@ -51,7 +51,7 @@ $(document).ready(function(){
         $('#mic').hide();
         $('#sidebar').hide();
         $('#lyrics').append('<p class="scribe">' + intro + '</p>').hide().fadeIn(3000);
-        $('#continue').hide().delay(7000).fadeIn(3000);
+        $('#continue').hide().delay(3000).fadeIn(1500);
     }
     
     
